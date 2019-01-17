@@ -12,8 +12,20 @@ class PagesController extends Controller
         return view('home');
     }
 
-    public function about() {
-        return view('about');
+    public function portfolio() {
+        return view('portfolio');
+    }
+
+    public function proyectos() {
+        return view('proyectos');
+    }
+
+    public function blog() {
+        return view('blog');
+    }
+
+    public function contacto() {
+        return view('contacto');
     }
 
     public function contact() {

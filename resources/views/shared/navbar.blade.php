@@ -1,28 +1,30 @@
-<nav class="navbar navbar-default">
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */ 
+        .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    </style>
+    <nav class="navbar navbar-inverse">
   <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display-->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
       </button>
       <a class="navbar-brand" href="/web/public">Vsevillano</a>
     </div>
-    <div id="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
         <li class="active"><a href="/web/public">Inicio</a></li>
-        <li><a href="/about">Porfolio</a></li>
-        <li><a href="/contact">Contacto</a></li>
-        <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Usuario
-        <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="/users/login">Log in</a></li>
-            <li><a href="/users/register">Registrar</a></li>
-          </ul>
-        </li>
+        <li><a href="portfolio">Portfolio</a></li>
+        <li><a href="blog">Blog</a></li>
+        <li><a href="proyectos">Proyectos</a></li>
+        <li><a href="contacto">Contacto</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
     </div>
   </div>
