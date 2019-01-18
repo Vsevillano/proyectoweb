@@ -2,9 +2,10 @@
 
 Route::get('/', 'PagesController@home');
 Route::get('/portfolio', 'PagesController@portfolio');
-Route::get('/proyectos', 'PagesController@proyectos');
 Route::get('/blog', 'PagesController@blog');
 Route::get('/contacto', 'PagesController@contacto');
+Route::get('/sistemas', 'PagesController@sistemas');
+Route::get('/desarrollo', 'PagesController@desarrollo');
 
 
 

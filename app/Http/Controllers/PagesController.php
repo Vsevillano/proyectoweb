@@ -16,8 +16,12 @@ class PagesController extends Controller
         return view('portfolio');
     }
 
-    public function proyectos() {
-        return view('proyectos');
+    public function sistemas() {
+        return view('sistemas');
+    }
+
+    public function desarrollo() {
+        return view('desarrollo');
     }
 
     public function blog() {

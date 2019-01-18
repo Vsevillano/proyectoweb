@@ -1,67 +1,90 @@
   @extends('master')
   @section('title', 'Inicio')
   @section('content')  
-  <style>
 
-    
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 450px}
-    
-    /* Set gray background color and 100% height */
-    .sidenav {
-      padding-top: 20px;
-      background-color: #f1f1f1;
-      height: 100%;
-    }
-    
-    /* Set black background color, white text and some padding */
-    footer {
-      background-color: #555;
-      color: white;
-      padding: 15px;
-    }
-    
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height:auto;} 
-    }
-  </style>
-  <div class="container-fluid text-center">    
-  <div class="row content">
-    
-    <div class="col-sm-10 text-justify"> 
-      <h1>Bienvenido</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <header>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <!-- Slide One - Set the background image for this slide in the line below -->
+          <div class="carousel-item active" style="background-image: url('http://placehold.it/1900x1080')">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>First Slide</h3>
+              <p>This is a description for the first slide.</p>
+            </div>
+          </div>
+          <!-- Slide Two - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Second Slide</h3>
+              <p>This is a description for the second slide.</p>
+            </div>
+          </div>
+          <!-- Slide Three - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Third Slide</h3>
+              <p>This is a description for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <h1 class="my-4">Welcome to Modern Business</h1>
+
+      <!-- Features Section -->
+      <div class="row">
+        <div class="col-lg-6">
+          <h2>Modern Business Features</h2>
+          <p>The Modern Business template by Start Bootstrap includes:</p>
+          <ul>
+            <li>
+              <strong>Bootstrap v4</strong>
+            </li>
+            <li>jQuery</li>
+            <li>Font Awesome</li>
+            <li>Working contact form with validation</li>
+            <li>Unstyled page elements for easy customization</li>
+          </ul>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
+        </div>
+        <div class="col-lg-6">
+          <img class="img-fluid rounded" src="http://placehold.it/700x450" alt="">
+        </div>
+      </div>
+      <!-- /.row -->
+
       <hr>
-      <div class="col-sm-4"> 
-      <img src="img/vsevillano.jpg" alt="" class="center-block" style="border-radius: 50%">
-      </div>
-      <div class="col-sm-8 "> 
-        <h3>Administrador de sistemas</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi officia impedit aut eligendi aliquam qui omnis placeat et, minus veritatis voluptates exercitationem ipsum sunt. Accusamus ipsum iure quaerat laboriosam similique!Facilis explicabo non consectetur nostrum necessitatibus sunt beatae eaque libero esse, ab consequuntur ex amet culpa ut voluptas suscipit maxime magni nobis minus corrupti, provident neque similique. Qui, iure vitae! </p>
-        <div class="clearfix"></div>
-        <h3>Desarrollador web</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi officia impedit aut eligendi aliquam qui omnis placeat et, minus veritatis voluptates exercitationem ipsum sunt. Accusamus ipsum iure quaerat laboriosam similique!Facilis explicabo non consectetur nostrum necessitatibus sunt beatae eaque libero esse, ab consequuntur ex amet culpa ut voluptas suscipit maxime magni nobis minus corrupti, provident neque similique. Qui, iure vitae! </p>
-      </div>
-      <div class="col-sm-10">
-        <div class="clearfix"></div>
+
+      <!-- Call to Action Section -->
+      <div class="row mb-4">
+        <div class="col-md-8">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-lg btn-secondary btn-block" href="#">Call to Action</a>
+        </div>
       </div>
 
     </div>
-    <div class="col-sm-2 sidenav">
-      <div class="well">
-        <p>ADS</p>
-      </div>
-      <div class="well">
-        <p>ADS</p>
-      </div>
-    </div>
-  </div>
-</div>
+    <!-- /.container -->
+
 
 
 
