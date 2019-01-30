@@ -14,14 +14,54 @@ body {
   }
 }
 
+@media (max-width: 425px) {
+  .carousel-caption {
+    bottom: 30% ;
+  }
+
+}
+
+.img-circle {
+  max-width:300px;
+  max-height:300px;
+  border-radius:50%;
+  border: 2px solid whitesmoke;
+}
+
+#proyectos-recientes img {
+  height: 200px;
+  width: 300px;
+  padding: 10px;
+}
+
 .carousel-item {
-  height: 100vh;
+  height: 95vh;
   min-height: 300px;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.img-circle {
+  width:200px;
+  height:200px;
+  border-radius:150px;
+}
+
+.carousel-item h3 {
+  color: red;
+  font-size: 2rem;
+  font-family: 'Permanent Marker', cursive;
+
+}
+
+.carousel-item p {
+  color: red;
+  font-size: 1rem;
+  font-family: 'Permanent Marker', cursive;
+
 }
 
 .portfolio-item {

@@ -11,24 +11,24 @@
         </ol>
         <div class="carousel-inner" role="listbox">
           <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active" style="background-image: url('http://placehold.it/1900x1080')">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>First Slide</h3>
-              <p>This is a description for the first slide.</p>
+          <div class="carousel-item active" style="background-image: url('//192.168.0.103/web/public/img/binary.jpg')">
+            <div class="carousel-caption">
+              <h3>Administración de sistemas informáticos</h3>
+              <p>En Vsevillano podrás encontrar mucho sobre la administración de sistemas.</p>
             </div>
           </div>
           <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Second Slide</h3>
-              <p>This is a description for the second slide.</p>
+          <div class="carousel-item" style="background-image: url('//192.168.0.103/web/public/img/code.jpg')">
+            <div class="carousel-caption">
+              <h3>Desarrollo web</h3>
+              <p>También podrás encontrar información sobre desarrollo backend y frontend.</p>
             </div>
           </div>
           <!-- Slide Three - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Third Slide</h3>
-              <p>This is a description for the third slide.</p>
+          <div class="carousel-item" style="background-image: url('//192.168.0.103/web/public/img/service.jpg')">
+            <div class="carousel-caption">
+              <h3>Y mucho más</h3>
+              <p>Podrás encontrar información a cerca de mi, trabajos, proyectos, además de otros temas de interes.</p>
             </div>
           </div>
         </div>
@@ -46,7 +46,7 @@
     <!-- Page Content -->
     <div class="container">
 
-      <h1 class="my-4">Welcome to Modern Business</h1>
+      <h1 class="my-4">Bienvenid@ a mi página web</h1>
 
       <!-- Features Section -->
       <div class="row">

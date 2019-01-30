@@ -12,6 +12,9 @@
 
     <!-- Bootstrap core CSS -->
     <link href="//192.168.0.103/web/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Linf google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Pacifico|Permanent+Marker|Righteous" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/blog-post.css" rel="stylesheet">
