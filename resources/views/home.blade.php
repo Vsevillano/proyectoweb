@@ -46,26 +46,33 @@
     <!-- Page Content -->
     <div class="container">
 
-      <h1 class="my-4">Bienvenid@ a mi página web</h1>
+      <h1 class="my-4">Bienvenid@ a vsevillano.es</h1>
 
       <!-- Features Section -->
       <div class="row">
         <div class="col-lg-6">
-          <h2>Modern Business Features</h2>
-          <p>The Modern Business template by Start Bootstrap includes:</p>
+          
+          <p>Hablaremos de temas relacionados con:</p>
           <ul>
             <li>
-              <strong>Bootstrap v4</strong>
+              <strong>Desarrollo web</strong>
             </li>
-            <li>jQuery</li>
-            <li>Font Awesome</li>
-            <li>Working contact form with validation</li>
-            <li>Unstyled page elements for easy customization</li>
+            <li>
+              <strong>Administración de sistemas</strong>
+            </li>
           </ul>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
+          <p>Tocaremos aspectos sobre:</p>
+          <ul>
+            <li>jQuery</li>
+            <li>Ajax</li>
+            <li>Bootstrap</li>
+            <li>Vagrant</li>
+            <li>Docker</li>
+          </ul>
+          <p>Y mucho más, estos solo son algunos de mis temas preferidos, aunque abordaremos todo tipo de lenguajes y servicios.</p>
         </div>
         <div class="col-lg-6">
-          <img class="img-fluid rounded" src="http://placehold.it/700x450" alt="">
+          <img class="img-fluid rounded" src="//192.168.0.103/web/public/img/technology.jpg" alt="">
         </div>
       </div>
       <!-- /.row -->
@@ -75,10 +82,10 @@
       <!-- Call to Action Section -->
       <div class="row mb-4">
         <div class="col-md-8">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+          <p>Como recomendación personal, te sugiero echar un vistazo al blog de esta web, donde podrás encontrar todos los posts relacionados con los temas anteriores.</p>
         </div>
         <div class="col-md-4">
-          <a class="btn btn-lg btn-secondary btn-block" href="#">Call to Action</a>
+          <a class="btn btn-lg btn-secondary btn-block" href="blog">Visitar blog</a>
         </div>
       </div>
 

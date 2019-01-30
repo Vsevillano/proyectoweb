@@ -18,9 +18,10 @@
           <ul>
             <li>Nombre completo: <strong>Victoriano Sevillano Vega</strong></li>
             <li>Correo electrónico: <strong>victorianosevillano@gmail.com</strong></li>
-            <li>Carnet de conducir: <strong>B1</strong></li>
             <li>Teléfono de contacto: <strong>647742589</strong></li>
             <li>Fecha de nacimiento: <strong>27 de Abril de 1991</strong></li>
+            <li>Carnet de conducir: <strong>B1</strong></li>
+            <li>Disponibilidad: <strong>Inmediata</strong></li>
           </ul>
         </div>
         <div class="col-md-6 col-sm-6 mb-4 text-center" >
@@ -28,9 +29,6 @@
             <img class="img-circle" src="//192.168.0.103/web/public/img/vsevillano.jpg" alt="">
           </a>
         </div>
-
-
-
       </div>
 
 
@@ -134,28 +132,28 @@
       <div class="row" id="proyectos-recientes">
 
         <div class="col-md-3 col-sm-6 mb-4">
-          <a href="#">
+          <a href="https://github.com/Vsevillano/Reparto-FCT-Sico-2.0">
             <img class="img-thumbnail" src="//192.168.0.103/web/public/img/Symfony_logo.png" alt="">
           </a>
           <center><span>Reparto FCT/PI 2.0</span></center>
         </div>
 
         <div class="col-md-3 col-sm-6 mb-4">
-          <a href="#">
+          <a href="https://github.com/Vsevillano/proyectoweb">
             <img class="img-thumbnail" src="//192.168.0.103/web/public/img/Laravel.svg.png" alt="">
           </a>
           <center><span>Web vsevillano</span></center>
         </div>
 
         <div class="col-md-3 col-sm-6 mb-4">
-          <a href="#">
+          <a href="https://github.com/Vsevillano/proyectoweb">
             <img class="img-thumbnail" src="//192.168.0.103/web/public/img/vagrant.png" alt="">
           </a>
           <center><span>Web vsevillano</span></center>
         </div>
 
         <div class="col-md-3 col-sm-6 mb-4">
-          <a href="#">
+          <a href="https://github.com/Vsevillano">
             <img class="img-thumbnail" src="//192.168.0.103/web/public/img/GitHub.png" alt="">
           </a>
           <center><span>Otros proyectos</span></center>
