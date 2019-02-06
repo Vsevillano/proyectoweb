@@ -129,7 +129,7 @@
       <!-- Related Projects Row -->
       <h3 class="my-4">Últimos proyectos</h3>
 
-      <div class="row" id="proyectos-recientes">
+      <div class="row text-center" id="proyectos-recientes">
 
         <div class="col-md-3 col-sm-6 mb-4">
           <a href="https://github.com/Vsevillano/Reparto-FCT-Sico-2.0">
