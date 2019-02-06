@@ -31,15 +31,15 @@
             <br>
           </p>
           <p>
-            <abbr title="Teléfono">T</abbr>: 647742589
+            <abbr title="Teléfono de contacto">Teléfono</abbr>: 647742589
           </p>
           <p>
-            <abbr title="Email">E</abbr>:
+            <abbr title="Email">Email</abbr>:
             <a href="mailto:victorianosevillano@gmail.com">victorianosevillano@gmail.com
             </a>
           </p>
           <p>
-            <abbr title="Fecha de nacimiento">F.N</abbr>: 27 de Abril de 1991
+            <abbr title="Fecha de nacimiento">Fecha de nacimiento:</abbr>: 27 de Abril de 1991
           </p>
         </div>
       </div>
