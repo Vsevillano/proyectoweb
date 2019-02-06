@@ -33,8 +33,8 @@
                 Log in
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                <a class="dropdown-item" href="login">Iniciar sesion</a>
-                <a class="dropdown-item" href="registro">Registrar</a>
+                <a class="dropdown-item" href="login">Iniciar sesión <i class="fas fa-sign-in-alt"></i></a>
+                <a class="dropdown-item" href="registro">Crear cuenta <i class="fas fa-user-plus"></i></a>
               </div>
             </li>
           </ul>
