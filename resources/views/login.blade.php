@@ -28,7 +28,7 @@
             font-weight: bold;
         }
     </style>
-    <div class="login-form">
+    <div class="login-form text-center">
         <form action="{{ route('login') }}" method="post">
             {{ csrf_field() }}
             <h2 class="text-center">Inicio de sesión</h2>       
