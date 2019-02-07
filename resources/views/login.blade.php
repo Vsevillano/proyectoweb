@@ -31,7 +31,7 @@
     <div class="login-form">
         <form action="{{ route('login') }}" method="post">
             {{ csrf_field() }}
-            <h2 class="text-center">Log in</h2>       
+            <h2 class="text-center">Inicio de sesión</h2>       
             <div class="form-group {{ $errors->has('email') ? 'has-error' : '' }}">
                 <input type="email" class="form-control" placeholder="Email" name="email" >
                 {!! $errors->first('email', '<span class="help-block">:message</span>') !!}
@@ -41,8 +41,7 @@
                 {!! $errors->first('password', '<span class="help-block">:message</span>') !!}
             </div>
             <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-block">Log in</button>
-            </div>
+                <button  class="btn btn-primary btn-block">Iniciar sesión</button>            </div>
             <div class="clearfix">
                 <label class="pull-left checkbox-inline"><input type="checkbox"> Recordar</label>
                 <a href="#" class="pull-right">¿Olvidó la contraseña?</a>
