@@ -32,6 +32,10 @@ class PagesController extends Controller
         return view('contacto');
     }
 
+    public function login() {
+        return view('login');
+    }
+
     public function contact() {
         return view('tickets.create');
     }
