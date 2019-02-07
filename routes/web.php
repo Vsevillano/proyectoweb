@@ -9,6 +9,7 @@ Route::get('/desarrollo', 'PagesController@desarrollo');
 
 Route::get('/login', 'PagesController@login');
 Route::post('/login', 'Auth\LoginController@login')->name('login');
+Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 
 
 

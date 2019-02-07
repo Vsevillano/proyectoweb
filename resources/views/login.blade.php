@@ -33,15 +33,18 @@
             {{ csrf_field() }}
             <h2 class="text-center">Inicio de sesión</h2>       
             <div class="form-group {{ $errors->has('email') ? 'has-error' : '' }}">
-                <input type="email" class="form-control" placeholder="Email" name="email" >
+                <label for="email">Email</label>
+                <input type="email" class="form-control" placeholder="Email" name="email" value="{{ old('email') }}">
                 {!! $errors->first('email', '<span class="help-block">:message</span>') !!}
             </div>
             <div class="form-group {{ $errors->has('password') ? 'has-error' : '' }}">
+                <label for="password">Contraseña</label>
                 <input type="password" class="form-control" placeholder="Contraseña" name="password" >
                 {!! $errors->first('password', '<span class="help-block">:message</span>') !!}
             </div>
             <div class="form-group">
-                <button  class="btn btn-primary btn-block">Iniciar sesión</button>            </div>
+                <button  class="btn btn-primary btn-block">Iniciar sesión</button>  
+            </div>
             <div class="clearfix">
                 <label class="pull-left checkbox-inline"><input type="checkbox"> Recordar</label>
                 <a href="#" class="pull-right">¿Olvidó la contraseña?</a>
