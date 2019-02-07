@@ -11,21 +11,21 @@
         </ol>
         <div class="carousel-inner" role="listbox">
           <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active" style="background-image: url('//192.168.0.103/web/public/img/binary.jpg')">
+          <div class="carousel-item active" style="background-image: url('img/binary.jpg')">
             <div class="carousel-caption">
               <h3>Administración de sistemas informáticos</h3>
               <p>En Vsevillano podrás encontrar mucho sobre la administración de sistemas.</p>
             </div>
           </div>
           <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('//192.168.0.103/web/public/img/code.jpg')">
+          <div class="carousel-item" style="background-image: url('img/code.jpg')">
             <div class="carousel-caption">
               <h3>Desarrollo web</h3>
               <p>También podrás encontrar información sobre desarrollo backend y frontend.</p>
             </div>
           </div>
           <!-- Slide Three - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('//192.168.0.103/web/public/img/service.jpg')">
+          <div class="carousel-item" style="background-image: url('img/service.jpg')">
             <div class="carousel-caption">
               <h3>Y mucho más</h3>
               <p>Podrás encontrar información a cerca de mi, trabajos, proyectos, además de otros temas de interes.</p>
@@ -72,7 +72,7 @@
           <p>Y mucho más, estos solo son algunos de mis temas preferidos, aunque abordaremos todo tipo de lenguajes y servicios.</p>
         </div>
         <div class="col-lg-6">
-          <img class="img-fluid rounded" src="//192.168.0.103/web/public/img/technology.jpg" alt="">
+          <img class="img-fluid rounded" src="img/technology.jpg" alt="">
         </div>
       </div>
       <!-- /.row -->

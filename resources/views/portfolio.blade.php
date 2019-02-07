@@ -26,7 +26,7 @@
         </div>
         <div class="col-md-6 col-sm-6 mb-4 text-center" >
           <a href="#">
-            <img class="img-circle" src="//192.168.0.103/web/public/img/vsevillano.jpg" alt="">
+            <img class="img-circle" src="img/vsevillano.jpg" alt="">
           </a>
         </div>
       </div>
@@ -129,32 +129,32 @@
       <!-- Related Projects Row -->
       <h3 class="my-4">Últimos proyectos</h3>
 
-      <div class="row" id="proyectos-recientes">
+      <div class="row text-center" id="proyectos-recientes">
 
         <div class="col-md-3 col-sm-6 mb-4">
           <a href="https://github.com/Vsevillano/Reparto-FCT-Sico-2.0">
-            <img class="img-thumbnail" src="//192.168.0.103/web/public/img/Symfony_logo.png" alt="">
+            <img class="img-thumbnail" src="img/Symfony_logo.png" alt="">
           </a>
           <center><span>Reparto FCT/PI 2.0</span></center>
         </div>
 
         <div class="col-md-3 col-sm-6 mb-4">
           <a href="https://github.com/Vsevillano/proyectoweb">
-            <img class="img-thumbnail" src="//192.168.0.103/web/public/img/Laravel.svg.png" alt="">
+            <img class="img-thumbnail" src="img/Laravel.svg.png" alt="">
           </a>
           <center><span>Web vsevillano</span></center>
         </div>
 
         <div class="col-md-3 col-sm-6 mb-4">
           <a href="https://github.com/Vsevillano/proyectoweb">
-            <img class="img-thumbnail" src="//192.168.0.103/web/public/img/vagrant.png" alt="">
+            <img class="img-thumbnail" src="img/vagrant.png" alt="">
           </a>
           <center><span>Web vsevillano</span></center>
         </div>
 
         <div class="col-md-3 col-sm-6 mb-4">
           <a href="https://github.com/Vsevillano">
-            <img class="img-thumbnail" src="//192.168.0.103/web/public/img/GitHub.png" alt="">
+            <img class="img-thumbnail" src="img/GitHub.png" alt="">
           </a>
           <center><span>Otros proyectos</span></center>
         </div>
