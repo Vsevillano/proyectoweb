@@ -39,9 +39,14 @@
         }
     </style>
     <div class="login-form text-center">
-        <form action="{{ route('login') }}" method="post">
+        <form action="{{ route('register') }}" method="post">
             {{ csrf_field() }}
-            <h2 class="text-center">Inicio de sesión</h2>       
+            <h2 class="text-center">Registro</h2>
+            <div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
+                <label for="name">Nombre</label>
+                <input type="name" class="form-control" placeholder="Nombre de usuario" name="name" value="{{ old('name') }}">
+                {!! $errors->first('name', '<span class="help-block">:message</span>') !!}
+            </div>       
             <div class="form-group {{ $errors->has('email') ? 'has-error' : '' }}">
                 <label for="email">Email</label>
                 <input type="email" class="form-control" placeholder="Email" name="email" value="{{ old('email') }}">
@@ -53,14 +58,13 @@
                 {!! $errors->first('password', '<span class="help-block">:message</span>') !!}
             </div>
             <div class="form-group">
-                <button  class="btn btn-primary btn-block">Iniciar sesión</button>  
+                <label for="password-confirm">Repetir contraseña</label>
+                <input type="password" class="form-control" placeholder="Repetir contraseña" name="password_confirmation" >
             </div>
-            <div class="clearfix">
-                <label class="pull-left checkbox-inline"><input type="checkbox"> Recordar</label>
-                <a href="#" class="pull-right">¿Olvidó la contraseña?</a>
-            </div>        
+            <div class="form-group">
+                <button  class="btn btn-primary btn-block">Crear cuenta</button>  
+            </div>      
         </form>
-        <p class="text-center"><a href="register">Crear nueva cuenta</a></p>
     </div>
     </div>
     <!-- /.container -->

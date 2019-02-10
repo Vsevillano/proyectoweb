@@ -8,21 +8,13 @@ Route::get('/sistemas', 'PagesController@sistemas');
 Route::get('/desarrollo', 'PagesController@desarrollo');
 
 Route::get('/login', 'Auth\LoginController@showLoginForm');
-
-
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 Route::post('/login', 'Auth\LoginController@login')->name('login');
 Route::post('/logout', 'Auth\LoginController@logout')->name('logout');
 
+Route::get('/register', 'Auth\RegisterController@showRegistrationForm')->name('register');
+Route::post('/register', 'Auth\RegisterController@register');
 
-Route::get('/about', 'PagesController@about');
-Route::get('/contact', 'TicketsController@create');
-Route::post('/contact', 'TicketsController@store');
-Route::get('/tickets', 'TicketsController@index');
-Route::get('/ticket/{slug?}', 'TicketsController@show');
-Route::get('/ticket/{slug?}/edit', 'TicketsController@edit');
-Route::post('/ticket/{slug?}/delete', 'TicketsController@destroy');
-Route::post('/comment', 'TicketsController@newComment');
 
 
 Route::get('sendemail', function() {
