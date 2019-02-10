@@ -43,9 +43,9 @@
             {{ csrf_field() }}
             <h2 class="text-center">Inicio de sesión</h2>       
             <div class="form-group {{ $errors->has('email') ? 'has-error' : '' }}">
-                <label for="name">Email / Usuario</label>
-                <input type="text" class="form-control" placeholder="Email o usuario" name="name" value="{{ old('name') }}">
-                {!! $errors->first('name', '<span class="help-block">:message</span>') !!}
+                <label for="email">Email</label>
+                <input type="email" class="form-control" placeholder="Email" name="email" value="{{ old('email') }}">
+                {!! $errors->first('email', '<span class="help-block">:message</span>') !!}
             </div>
             <div class="form-group {{ $errors->has('password') ? 'has-error' : '' }}">
                 <label for="password">Contraseña</label>
