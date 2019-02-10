@@ -7,10 +7,12 @@ Route::get('/contacto', 'PagesController@contacto');
 Route::get('/sistemas', 'PagesController@sistemas');
 Route::get('/desarrollo', 'PagesController@desarrollo');
 
-Route::get('/login', 'PagesController@login');
-Route::post('/login', 'Auth\LoginController@login')->name('login');
-Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+Route::get('/login', 'Auth\LoginController@showLoginForm');
 
+
+Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+Route::post('/login', 'Auth\LoginController@login')->name('login');
+Route::post('/logout', 'Auth\LoginController@logout')->name('logout');
 
 
 Route::get('/about', 'PagesController@about');
