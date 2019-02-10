@@ -30,31 +30,17 @@
         }
     </style>
     <div class="login-form text-center">
-        <form action="{{ route('register') }}" method="post">
+        <form action="{{ route('login') }}" method="post">
             {{ csrf_field() }}
-            <h2 class="text-center">Registro</h2>
-            <div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
-                <label for="name">Nombre</label>
-                <input type="name" class="form-control" placeholder="Nombre de usuario" name="name" value="{{ old('name') }}">
-                {!! $errors->first('name', '<span class="help-block">:message</span>') !!}
-            </div>       
+            <h2 class="text-center">Inicio de sesión</h2>       
             <div class="form-group {{ $errors->has('email') ? 'has-error' : '' }}">
                 <label for="email">Email</label>
                 <input type="email" class="form-control" placeholder="Email" name="email" value="{{ old('email') }}">
                 {!! $errors->first('email', '<span class="help-block">:message</span>') !!}
             </div>
-            <div class="form-group {{ $errors->has('password') ? 'has-error' : '' }}">
-                <label for="password">Contraseña</label>
-                <input type="password" class="form-control" placeholder="Contraseña" name="password" >
-                {!! $errors->first('password', '<span class="help-block">:message</span>') !!}
-            </div>
             <div class="form-group">
-                <label for="password-confirm">Repetir contraseña</label>
-                <input type="password" class="form-control" placeholder="Repetir contraseña" name="password_confirmation" >
-            </div>
-            <div class="form-group">
-                <button  class="btn btn-primary btn-block">Crear cuenta</button>  
-            </div>      
+                <button  class="btn btn-primary btn-block">Recuperar contraseña</button>  
+            </div>       
         </form>
     </div>
     </div>

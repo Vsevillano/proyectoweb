@@ -1,7 +1,30 @@
 @extends('master')
   @section('title', 'Inicio')
   @section('content') 
-
+    <style type="text/css">
+            .login-form {
+            width: 340px;
+            margin: 50px auto;
+            min-height: 60vh;
+            }
+            .login-form form {
+            margin-bottom: 15px;
+                background: #f7f7f7;
+                box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+                padding: 30px;
+            }
+            .login-form h2 {
+                margin: 0 0 15px;
+            }
+            .form-control, .btn {
+                min-height: 38px;
+                border-radius: 2px;
+            }
+            .btn {        
+                font-size: 15px;
+                font-weight: bold;
+            }
+        </style>
     <!-- Page Content -->
     <div class="container">
 
@@ -13,31 +36,6 @@
         @endif 
 
 
-
-        <style type="text/css">
-        .login-form {
-          width: 340px;
-          margin: 50px auto;
-          min-height: 60vh;
-        }
-        .login-form form {
-          margin-bottom: 15px;
-            background: #f7f7f7;
-            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-            padding: 30px;
-        }
-        .login-form h2 {
-            margin: 0 0 15px;
-        }
-        .form-control, .btn {
-            min-height: 38px;
-            border-radius: 2px;
-        }
-        .btn {        
-            font-size: 15px;
-            font-weight: bold;
-        }
-    </style>
     <div class="login-form text-center">
         <form action="{{ route('login') }}" method="post">
             {{ csrf_field() }}
@@ -57,7 +55,7 @@
             </div>
             <div class="clearfix">
                 <label class="pull-left checkbox-inline"><input type="checkbox"> Recordar</label>
-                <a href="#" class="pull-right">¿Olvidó la contraseña?</a>
+                <a href="password.request" class="pull-right">¿Olvidó la contraseña?</a>
             </div>        
         </form>
         <p class="text-center"><a href="register">Crear nueva cuenta</a></p>
