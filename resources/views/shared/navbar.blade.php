@@ -42,7 +42,10 @@
                   <a class="dropdown-item" href="login">Iniciar sesión <i class="fas fa-sign-in-alt"></i></a>
                   <a class="dropdown-item" href="register">Crear cuenta <i class="fas fa-user-plus"></i></a>
               @else
-                  <a class="dropdown-item" href="logout">Cerrar sesión <i class="fas fa-sign-out-alt"></i></a>
+              <form method="post" action="{{ route('logout') }}">
+                {{ csrf_field() }}
+                <button class="dropdown-item">Cerrar sesión <i class="fas fa-sign-out-alt"></i></button>
+              </form>
               @endif
               </div>
             </li>
