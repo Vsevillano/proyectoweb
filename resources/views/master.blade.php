@@ -17,7 +17,7 @@
     <meta name="description" content="Desarrollo de aplicaciones web y administración de sistemas informáticos en red">
     <meta name="author" content="Victoriano Sevillano Vega">
 
-    <title>Vsevillano - Desarrollo web y administración de sistemas informáticos</title>
+    <title>Vsevillano @yield('title')</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">

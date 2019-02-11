@@ -1,5 +1,5 @@
 @extends('master')
-  @section('title', 'Inicio')
+  @section('title', '| Login')
   @section('content') 
     <style type="text/css">
             .login-form {
