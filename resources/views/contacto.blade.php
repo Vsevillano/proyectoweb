@@ -50,30 +50,29 @@
       <div class="row">
         <div class="col-lg-8 mb-4">
           <h3>Enviar correo electrónico</h3>
-          <form name="sentMessage" id="contactForm" novalidate>
+          @if (Session::has('success'))
+          <div class="alert alert-info">{{ Session::get('success') }}</div>
+          @endif
+          <form action="{{ url('contacto') }}" method="post" id="contactForm" novalidate>
+            {{ csrf_field() }}
+            <div class="control-group form-group">
+                <div class="controls">
+                  <label>Correo electrónico:</label>
+                  <input type="email" class="form-control" id="email" name="email" required data-validation-required-message="Por favor, escriba su correo electrónico.">
+                </div>
+            </div>
+
             <div class="control-group form-group">
               <div class="controls">
-                <label>Nombre completo:</label>
-                <input type="text" class="form-control" id="name" required data-validation-required-message="Por favor, escriba su nombre.">
-                <p class="help-block"></p>
+                <label>Asunto:</label>
+                <input type="text" class="form-control" id="subject" name="subject" required data-validation-required-message="Por favor, escriba su número de teléfono.">
               </div>
             </div>
-            <div class="control-group form-group">
-              <div class="controls">
-                <label>Teléfono:</label>
-                <input type="tel" class="form-control" id="phone" required data-validation-required-message="Por favor, escriba su número de teléfono.">
-              </div>
-            </div>
-            <div class="control-group form-group">
-              <div class="controls">
-                <label>Correo electrónico:</label>
-                <input type="email" class="form-control" id="email" required data-validation-required-message="Por favor, escriba su correo electrónico.">
-              </div>
-            </div>
+
             <div class="control-group form-group">
               <div class="controls">
                 <label>Mensaje:</label>
-                <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Por favor, escriba su mensaje." maxlength="999" style="resize:none"></textarea>
+                <textarea rows="10" cols="100" class="form-control" id="message" name="message" required data-validation-required-message="Por favor, escriba su mensaje." maxlength="999" style="resize:none"></textarea>
               </div>
             </div>
             <div id="success"></div>
