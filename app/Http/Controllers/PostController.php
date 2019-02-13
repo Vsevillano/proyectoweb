@@ -5,7 +5,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Input;
 use App\Models\Post;
-
+use App\Models\Comment;
 
 class PostController extends Controller
 {
@@ -25,6 +25,8 @@ class PostController extends Controller
             return 'No existe el post';
         else {
             $data['post'] = $post;
+            $data['comments'] = Comment::where('post_id', $id)->get();
+
             return view('blog.post', $data);
         }
      }

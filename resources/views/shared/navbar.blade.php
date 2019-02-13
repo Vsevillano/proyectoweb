@@ -12,10 +12,10 @@
               <a class="nav-link" href="/">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="portfolio">Portfolio</a>
+              <a class="nav-link" href="/portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="blog">Blog</a>
+              <a class="nav-link" href="/blog">Blog</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -27,7 +27,7 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contacto">Contacto</a>
+              <a class="nav-link" href="/contacto">Contacto</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
