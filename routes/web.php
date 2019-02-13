@@ -28,9 +28,10 @@ Route::get('/password/reset/{token}', 'Auth\ForgotPasswordController@showResetFo
 Route::post('/password/reset', 'Auth\ForgotPasswordController@reset');
 
 /** Blog */
-Route::get('/blog', 'PostController@listPosts');
-Route::get('/blog/post/editpost/{id}', 'PostController@getEditpost');
-Route::get('/blog/post/{id}', 'PostController@getPost');
+Route::get('/blog', 'PostController@listPosts'); /** Lista todos los posts  */
+Route::get('/blog/post/editpost/{id?}', 'PostController@getEditpost')->middleware('auth'); /** Permite editar/crear posts (Hay que estar autenticado) */
+Route::get('/blog/post/{id}', 'PostController@getPost'); /** Muestra un post en singular */
+Route::post('/blog/post/savepost', 'PostController@postSavepost'); /** Guarda un post en la bbdd */
 
-//Route::resource('/blog/post', 'PostController');
-//Route::resource('/blog/comments', 'CommentController');
+Route::post('/blog/post/postCreatecomment', 'CommentController@postCreatecomment'); /** Guarda un post en la bbdd */
+

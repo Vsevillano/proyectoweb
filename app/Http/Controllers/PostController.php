@@ -3,7 +3,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use Input;
+use Illuminate\Support\Facades\Input;
 use App\Models\Post;
 use App\Models\Comment;
 
@@ -14,11 +14,8 @@ class PostController extends Controller
         return view('blog.index', $data);
     }
 
-    public function getList() {
 
-     }
-    
-     public function getPost($id) {
+    public function getPost($id) {
    
         $post = Post::find($id);
         if($post == null)
@@ -29,11 +26,10 @@ class PostController extends Controller
 
             return view('blog.post', $data);
         }
-     }
+    }
 
     public function postSavepost() {
         $input = Input::all();
-
         if(isset($input['post_id'])) {
             $post = Post::find($input['post_id']);
         } else {
@@ -45,7 +41,7 @@ class PostController extends Controller
         $post->publish_date = $input['publish_date'];
         $post->status = $input['status'];
         $post->save(); // Guarda el objeto en la BD
-        return "Post guardado";
+        return view('blog.index');
     }
 
     public function getEditpost($id = null) {
@@ -55,17 +51,16 @@ class PostController extends Controller
         else {
             $data['post'] = Post::find($id);
             if($data['post'] == null)
-                return 'El post no existe';
-            
+                return view('blog.index');
             return view('blog.edit-post', $data);
         }
-     }
+    }
 
-     public function getDeletepost($id) {
+    public function getDeletepost($id) {
         $post = Post::find($id);
         if($post == null)
             return "No existe este post";
         else
             $post->delete();
-     }
+    }
 }

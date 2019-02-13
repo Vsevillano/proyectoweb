@@ -14,7 +14,7 @@
           <a href="/">Inicio</a>
 		</li>
 		<li class="breadcrumb-item">
-			<a href="blog">Blog</a>
+			<a href="/blog">Blog</a>
 		</li>
         <li class="breadcrumb-item active">Post</li>
       </ol>
@@ -44,10 +44,13 @@
           <div class="card my-4">
             <h5 class="card-header">Deja un comentario:</h5>
             <div class="card-body">
-              <form>
-                  <input type="hidden" name="post_id" value="{‌{ $post->id }}">
+                <form action="{{ url('/blog/post/postCreatecomment') }}" method="POST">
+                  {!! csrf_field() !!}
+                  <input type="hidden" name="post_id" value="{{$post->id}}">
+                  <input type="hidden" name="user" value="1">
+
                 <div class="form-group">
-                  <textarea class="form-control" rows="3"></textarea>
+                  <textarea class="form-control" name="comment" rows="3"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Comentar</button>
               </form>

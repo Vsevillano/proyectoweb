@@ -11,10 +11,10 @@
 		<div class="row">
 			<!-- Blog Entries Column -->
 			<div class="col-md-8">
-				<form action="{‌{ url('blog/post/savepost') }}" method="POST">
+				<form action="{{ url('/blog/post/savepost') }}" method="POST">
 					{!! csrf_field() !!}
 					@if(isset($post))
-						<input type="hidden" name="post_id" value="{‌{ $post->id }}">
+						<input type="hidden" name="post_id" value="{{$post->id}}">
 					@endif
 
 					<label for="title">Título</label>

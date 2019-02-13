@@ -3,8 +3,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use Input;
 use App\Models\Comment;
+use Illuminate\Support\Facades\Input;
+
 
 class CommentController extends Controller
 {
@@ -16,10 +17,15 @@ class CommentController extends Controller
         $comment->text = $input['comment'];
         $comment->post_id = $input['post_id'];
         $comment->save();
-        return 'Comentario creado!';
+        return back();
     }
 
-   public function getDeletecomment($id) {
-       return "Borramos el comentario";
-   }
+    public function getDeletecomment($id) {
+        $comment = Comment::find($id);
+        if($comment == null)
+            return 'El comentario no existe';
+        else
+            $comment->delete();
+        return 'Comentario eliminado';
+     }
 }
