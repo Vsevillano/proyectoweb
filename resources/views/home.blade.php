@@ -1,5 +1,5 @@
   @extends('master')
-  @section('title', 'Inicio')
+  @section('title', '| Inicio')
   @section('content')  
 
   <header>

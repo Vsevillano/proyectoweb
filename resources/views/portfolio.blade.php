@@ -1,5 +1,5 @@
 @extends('master')
-  @section('title', 'Inicio')
+  @section('title', '| Portfolio')
   @section('content')  
 
     <!-- Page Content -->

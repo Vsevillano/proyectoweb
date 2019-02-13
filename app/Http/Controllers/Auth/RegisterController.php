@@ -29,6 +29,16 @@ class RegisterController extends Controller
      */
     protected $redirectTo = '/home';
 
+
+    /**
+     * Al registrar el usuario, se redirecciona a / en lugar de /home
+     * 
+     */
+    public function redirectTo() 
+    {
+        return 'dashboard';
+    }
+
     /**
      * Create a new controller instance.
      *
@@ -53,6 +63,14 @@ class RegisterController extends Controller
             'password' => 'required|string|min:6|confirmed',
         ]);
     }
+
+    public function showRegistrationForm()
+    {
+        return view('register');
+
+    }
+
+
 
     /**
      * Create a new user instance after a valid registration.

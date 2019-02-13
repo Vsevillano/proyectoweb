@@ -1,3 +1,4 @@
+    
     <!-- Navigation -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
@@ -30,11 +31,22 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Log in
+                @if (Auth::guest())
+                    Log in
+                @else
+                    Log out
+                @endif
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                <a class="dropdown-item" href="login">Iniciar sesión <i class="fas fa-sign-in-alt"></i></a>
-                <a class="dropdown-item" href="registro">Crear cuenta <i class="fas fa-user-plus"></i></a>
+              @if (Auth::guest())
+                  <a class="dropdown-item" href="login">Iniciar sesión <i class="fas fa-sign-in-alt"></i></a>
+                  <a class="dropdown-item" href="register">Crear cuenta <i class="fas fa-user-plus"></i></a>
+              @else
+              <form method="post" action="{{ route('logout') }}">
+                {{ csrf_field() }}
+                <button class="dropdown-item">Cerrar sesión <i class="fas fa-sign-out-alt"></i></button>
+              </form>
+              @endif
               </div>
             </li>
           </ul>

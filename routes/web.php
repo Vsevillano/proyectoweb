@@ -4,20 +4,23 @@ Route::get('/', 'PagesController@home');
 Route::get('/portfolio', 'PagesController@portfolio');
 Route::get('/blog', 'PagesController@blog');
 Route::get('/contacto', 'PagesController@contacto');
+Route::post('/contacto', 'PagesController@postContacto');
+
 Route::get('/sistemas', 'PagesController@sistemas');
 Route::get('/desarrollo', 'PagesController@desarrollo');
 
+Route::get('/login', 'Auth\LoginController@showLoginForm');
+Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+Route::post('/login', 'Auth\LoginController@login')->name('login');
+Route::post('/logout', 'Auth\LoginController@logout')->name('logout');
 
+Route::get('/register', 'Auth\RegisterController@showRegistrationForm')->name('register');
+Route::post('/register', 'Auth\RegisterController@register');
 
-Route::get('/about', 'PagesController@about');
-Route::get('/contact', 'TicketsController@create');
-Route::post('/contact', 'TicketsController@store');
-Route::get('/tickets', 'TicketsController@index');
-Route::get('/ticket/{slug?}', 'TicketsController@show');
-Route::get('/ticket/{slug?}/edit', 'TicketsController@edit');
-Route::post('/ticket/{slug?}/delete', 'TicketsController@destroy');
-Route::post('/comment', 'TicketsController@newComment');
-
+Route::get('/password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');
+Route::post('/password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
+Route::get('/password/reset/{token}', 'Auth\ForgotPasswordController@showResetForm')->name('password.reset');
+Route::post('/password/reset', 'Auth\ForgotPasswordController@reset');
 
 Route::get('sendemail', function() {
     
