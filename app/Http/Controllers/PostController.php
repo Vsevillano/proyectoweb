@@ -4,7 +4,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Input;
-use App\Models\Post;
+use App\Post;
 
 
 class PostController extends Controller
