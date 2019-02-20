@@ -48,7 +48,7 @@
             <li>Migración de moodle del IES</li>
           </ul>
           <h3 class="my-3">Principales competencias</h3>
-          <span>Administración de sistemas</span> 
+          <span>Reparación Hardware</span> 
           <div class="progress progress-striped active">  
           <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%">
                <span class="sr-only">95% completado</span>

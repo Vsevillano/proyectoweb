@@ -16,6 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Desarrollo de aplicaciones web y administración de sistemas informáticos en red">
     <meta name="author" content="Victoriano Sevillano Vega">
+    <link rel="icon" href="img/favicon.png" sizes="16x16" type="image/png">
 
     <title>Vsevillano @yield('title')</title>
 
