@@ -17,6 +17,8 @@
             <li class="nav-item">
               <a class="nav-link" href="/blog">Blog</a>
             </li>
+            
+            <!--
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Proyectos
@@ -26,6 +28,8 @@
                 <a class="dropdown-item" href="desarrollo">Desarrollo web</a>
               </div>
             </li>
+            -->
+
             <li class="nav-item">
               <a class="nav-link" href="/contacto">Contacto</a>
             </li>
