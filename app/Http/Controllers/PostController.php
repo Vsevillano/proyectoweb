@@ -28,7 +28,7 @@ class PostController extends Controller
         }
     }
 
-    public function postSavepost() {
+    public function postSavepost($name) {
         $input = Input::all();
         if(isset($input['post_id'])) {
             $post = Post::find($input['post_id']);
@@ -40,9 +40,26 @@ class PostController extends Controller
         $post->description = $input['description'];
         $post->publish_date = $input['publish_date'];
         $post->status = $input['status'];
+        $post->image = $name;
         $post->save(); // Guarda el objeto en la BD
+    }
+
+    public function fileUpload(Request $request) {
+
+    $this->validate($request, [
+        'input_img' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+    ]);
+
+    if ($request->hasFile('input_img')) {
+        $image = $request->file('input_img');
+        $name = time().'.'.$image->getClientOriginalExtension();
+        $destinationPath = public_path('/img');
+        $image->move($destinationPath, $name);
+        $this->postSavepost($name);
+
         return view('blog.index');
     }
+}
 
     public function getEditpost($id = null) {
    

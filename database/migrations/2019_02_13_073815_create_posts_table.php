@@ -21,7 +21,7 @@ class CreatePostsTable extends Migration
             $table->string('publish_date');
             $table->tinyInteger('status'); // 0 No publicado / 1 Publicado
             $table->timestamps();
-            $table->string('image');
+            $table->string('image')->nullable;
         });
     }
 

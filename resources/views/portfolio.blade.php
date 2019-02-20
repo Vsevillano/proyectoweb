@@ -21,6 +21,7 @@
             <li>Teléfono de contacto: <strong>647742589</strong></li>
             <li>Fecha de nacimiento: <strong>27 de Abril de 1991</strong></li>
             <li>Carnet de conducir: <strong>B1</strong></li>
+            <li>Idiomas: Ingles <strong>(Nivel B1)</strong></li>
             <li>Disponibilidad: <strong>Inmediata</strong></li>
           </ul>
         </div>
@@ -123,8 +124,26 @@
           </div>
       </div>
 
+      <div class="col-md-12">
+          <h3 class="my-3">Experiencia laboral</h3>
+          <ul>
+              <li><strong>2014-2015</strong> - Administrador de sistemas en Exinco S.L. en Azuaga, Badajoz.</li>
+              <br>
+              <p>Tareas realizadas:</p>
+              <ul>
+                <li>Administración y gestión del servidor.</li>
+                <li>Administración y mantenimiento del resto del equipo informático.</li>
+                <li>Encargado de la publicidad digital.</li>
+                <li>Comunity Manager de las redes sociales de la empresa.</li>
+                <li>Atención al cliente y asesoramiento sobre el producto.</li>
+              </ul>
+          </ul>
+      </div>
+
       </div>
       <!-- /.row -->
+      
+
 
       <!-- Related Projects Row -->
       <h3 class="my-4">Últimos proyectos</h3>
