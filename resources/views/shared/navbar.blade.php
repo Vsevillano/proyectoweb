@@ -17,7 +17,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/blog">Blog</a>
             </li>
-            
+
             <!--
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -43,8 +43,8 @@
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
               @if (Auth::guest())
-                  <a class="dropdown-item" href="login">Iniciar sesión <i class="fas fa-sign-in-alt"></i></a>
-                  <a class="dropdown-item" href="register">Crear cuenta <i class="fas fa-user-plus"></i></a>
+                  <a class="dropdown-item" href="/login">Iniciar sesión <i class="fas fa-sign-in-alt"></i></a>
+                  <a class="dropdown-item" href="/register">Crear cuenta <i class="fas fa-user-plus"></i></a>
               @else
               <form method="post" action="{{ route('logout') }}">
                 {{ csrf_field() }}
