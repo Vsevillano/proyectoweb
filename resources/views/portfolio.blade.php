@@ -148,7 +148,6 @@
               <li>Instalacion y gestion de sistemas operativos</li>
               <li>Instalacion software</li>
               <li>Atención y consejo al cliente/empresa.</li>
-              <li></li>
             </ul>
         </ul>
       </div>
