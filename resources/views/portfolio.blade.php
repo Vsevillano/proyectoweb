@@ -144,9 +144,9 @@
             <br>
             <p>Tareas realizadas:</p>
             <ul>
-              <li>Reparacion de equipos.</li>
-              <li>Instalacion y gestion de sistemas operativos</li>
-              <li>Instalacion software</li>
+              <li>Reparación de equipos.</li>
+              <li>Instalación y gestión de sistemas operativos</li>
+              <li>Instalación software</li>
               <li>Atención y consejo al cliente/empresa.</li>
             </ul>
         </ul>
