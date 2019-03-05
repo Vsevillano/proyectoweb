@@ -138,7 +138,22 @@
                 <li>Atención al cliente y asesoramiento sobre el producto.</li>
               </ul>
           </ul>
+
+          <ul>
+            <li><strong>2019-Actulidad</strong> - Administrador de sistemas en Pc Core en Córdoba, Córdoba</li>
+            <br>
+            <p>Tareas realizadas:</p>
+            <ul>
+              <li>Reparacion de equipos.</li>
+              <li>Instalacion y gestion de sistemas operativos</li>
+              <li>Instalacion software</li>
+              <li>Atención y consejo al cliente/empresa.</li>
+              <li></li>
+            </ul>
+        </ul>
       </div>
+
+      
 
       </div>
       <!-- /.row -->
